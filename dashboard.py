@@ -1,8 +1,10 @@
+#importing the important modules
 from tkinter import *
 from tkinter import messagebox
 from PIL import ImageTk,Image
 import sqlite3
 from tkinter import ttk
+
 a=Tk()
 a.title('Dash Board')
 a.geometry('2000x2000')

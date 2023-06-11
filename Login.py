@@ -44,6 +44,7 @@ label2=Label(a,text='One place for all your needs.',font=('Calisto MT Bold',18),
 label4=Label(a,text='_______',bg='#06518d',font=('Calisto MT Bold',14,'bold'),fg='White').place(x=600,y=195)
 label3=Label(a,text='Login',bg='#06518d',font=('Calisto MT Bold',18,'bold'),fg='White').place(x=600,y=180)
 label5=Label(a,text='Email :',bg='#06518d',font=('Calisto MT Bold',14,'bold'),fg='White').place(x=600,y=230)
+label6=Label(a,text='Show Password',bg='#06518d',font=('Calisto MT',12,'bold'),fg='White').place(x=625,y=310)
 entry1=Entry(a,borderwidth=1,bg='White')
 entry1.config(width=30)
 entry1.place(x=710,y=235)
@@ -69,9 +70,9 @@ def show_pass_check():
 C1=Checkbutton(a,bg='#06518d',font=('Calisto MT Bold',10),command=show_pass_check,variable=show_pass,offvalue=0,onvalue=1)
 C1.place(x=600,y=310)
 
-def me():
-    a.destroy()
-    import dashboard
+# def me():
+#     a.destroy()
+#     import dashboard
 button1=Button(a,text='Login',fg='#06518d',bg='White',font=('Calisto MT Bold',14,'bold'),height=1,width=7,command=verify).place(x=600,y=360)
 
 label8=Label(a,text=' * By Login means you are agreeing to our \n Tearms Of Service and Privacy Policy.',bg='#06518d',fg='White',font=('Roboto ',10,'bold')).place(x=600,y=420)
@@ -84,3 +85,13 @@ image=Label(a,image=img3,bg='White').place(x=300,y=500)
 a.mainloop()
 #
 
+
+#
+# def factorial(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+#
+# # Call the function with the value of 5
+# print(factorial(5))
